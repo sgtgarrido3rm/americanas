@@ -1,0 +1,12 @@
+{# base.html contém o template que usaremos como esqueleto #}
+{% extends "base.html" %}
+
+{% block conteudo %}
+  <h1>{{ section.title }}</h1>
+
+  {% for fii in fiis %}
+    <h2>
+        {{ fii.nome|upper }}
+    </h2>
+  {% endfor %}
+{% endblock %}
